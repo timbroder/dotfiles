@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -15,7 +15,7 @@ alias activate='source myenv/bin/activate'
 alias phpcs='/usr/local/Cellar/php54/5.4.9/bin/phpcs'
 alias sourcetree='open -a SourceTree'
 alias lists='sublime ~/Dropbox/Listacular/'
-
+alias lightpaper='open -a "LightPaper"'
 
 #alias cd='builtin cd "$@";ls -lG;'
 alias .=pwd                                 # Display current directory path
@@ -142,7 +142,7 @@ alias pony="ponyd serve --listen-interface=192.168.1.9"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(apache2-macports aws brew-cask brew codeclimate chucknorris composer django docker-compose docker fabric git-flow git github gitignore heroku jira laravel laravel5 npm python redis-cli rsync sublime vagrant)
+plugins=(aws brew-cask brew codeclimate composer docker fabric git-flow git github gitignore heroku jira laravel laravel5 python redis-cli rsync sublime vagrant)
 
 # User configuration
 
@@ -167,7 +167,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.local/bin
+export PATH=~/.composer/vendor/bin:/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.local/bin
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
@@ -185,3 +185,8 @@ cd () {
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="/usr/local/sbin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
