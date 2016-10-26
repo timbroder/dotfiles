@@ -142,7 +142,7 @@ alias pony="ponyd serve --listen-interface=192.168.1.9"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(apache2-macports aws brew-cask brew codeclimate chucknorris composer django docker-compose docker fabric git-flow git github gitignore heroku jira laravel laravel5 npm python redis-cli rsync sublime vagrant)
+plugins=(aws brew-cask brew codeclimate composer docker fabric git-flow git github gitignore heroku jira laravel laravel5 python redis-cli rsync sublime vagrant)
 
 # User configuration
 
