@@ -17,6 +17,9 @@ alias sourcetree='open -a SourceTree'
 alias lists='sublime ~/Dropbox/Listacular/'
 alias lightpaper='open -a "LightPaper"'
 
+# VSCode
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
 #alias cd='builtin cd "$@";ls -lG;'
 alias .=pwd                                 # Display current directory path
 alias ..='cd ../'                           # Go back 1 directory level
