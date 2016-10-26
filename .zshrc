@@ -15,7 +15,7 @@ alias activate='source myenv/bin/activate'
 alias phpcs='/usr/local/Cellar/php54/5.4.9/bin/phpcs'
 alias sourcetree='open -a SourceTree'
 alias lists='sublime ~/Dropbox/Listacular/'
-
+alias lightpaper='open -a "LightPaper"'
 
 #alias cd='builtin cd "$@";ls -lG;'
 alias .=pwd                                 # Display current directory path
