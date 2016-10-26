@@ -10,7 +10,7 @@ DEFAULT_USER="timbroder"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-alias sublime='open -a "Sublime Text 2"'
+alias sublime='open -a "Sublime Text"'
 alias activate='source myenv/bin/activate'
 alias phpcs='/usr/local/Cellar/php54/5.4.9/bin/phpcs'
 alias sourcetree='open -a SourceTree'
