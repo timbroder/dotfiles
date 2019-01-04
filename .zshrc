@@ -17,9 +17,6 @@ alias sourcetree='open -a SourceTree'
 alias lists='sublime ~/Dropbox/Listacular/'
 alias lightpaper='open -a "LightPaper"'
 
-# VSCode
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
 #alias cd='builtin cd "$@";ls -lG;'
 alias .=pwd                                 # Display current directory path
 alias ..='cd ../'                           # Go back 1 directory level
@@ -145,7 +142,7 @@ alias pony="ponyd serve --listen-interface=192.168.1.9"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew-cask brew codeclimate composer docker fabric git-flow git github gitignore heroku jira laravel laravel5 python redis-cli rsync sublime vagrant)
+plugins=(composer fabric git github gitignore jira laravel laravel5 python sublime vagrant)
 
 # User configuration
 
@@ -174,9 +171,9 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH=~/.composer/vendor/bin:/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.local/bin
+export PATH=/usr/local/opt/php@7.2/bin:~/.composer/vendor/bin:/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.local/bin
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 cd () {
    builtin cd "$@";
@@ -191,9 +188,4 @@ cd () {
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="/usr/local/sbin:$PATH"
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+eval $(thefuck --alias)
